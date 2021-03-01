@@ -8,29 +8,11 @@
 <style>
 .main_div{text-align:center; background: #800000; padding:20px; width: 600px;}
 .inner_div{background: #fff; margin-top:20px; height: 600px;}
-.buttons1 a{font-size: 16px;}
-.buttons1 a:hover{cursor:pointer; font-size: 16px;}
-
-#img {
-            margin:200px auto auto auto;
-            height: 501px;
-            width: 501px;
-            border: 1px solid red;
-            background-image: #fff;
-            background-repeat: no-repeat;
-            //float: inherit;
-            vertical-align: middle;
-            position: center;
-            align-content:center;
-            align-items:center;
-            }
-
-            #img1{
-            z-index:10;
-            }
+.buttons3 a{font-size: 16px font-color: blue;}
+.buttons3 a:hover{cursor:pointer; font-size: 16px; font-color: green;}
 </style>
 <script>
-    var divs = ["Anti-A1", "Anti-B1"];
+    var divs = ["Anti-A3", "Anti-B3"];
     var visibleDivId = null;
     function toggleVisibility(divId) {
       if(visibleDivId === divId) {
@@ -62,20 +44,20 @@
 <br>
 <p> <b>Identify the blood group by adding Anti-A and Anti-B sera on the blood sample</b></p>
 <br>
-<p><b>Sample 1:</p></b>
-<div id="img1"> <img src="image/Untitled Diagram.png"  style="width:392px;height:118px;" id="img1"> 
+<p><b>Sample 4:</p></b>
+<p> <img src="image/Untitled Diagram.png"  style="width:392px;height:118px;"> 
 
 <div class="buttons1">
-<a href="#" onclick="toggleVisibility('Anti-A1') ;" <div id="img1" onclick="document.getElementById('img1').src = 'bloodsample4.png'"></div>Add Anti-A</a> | <a href="#" onclick="toggleVisibility('Anti-B1');">Add Anti-B</a> 
-<div id="Anti-A1" style="display: none;"><b>Agglutination  occurs</b></div>
-<div id="Anti-B1" style="display: none;"><b>Agglutination does not occurs</b></div>
+<a href="#" onclick="toggleVisibility('Anti-A3');">Add Anti-A</a> | <a href="#" onclick="toggleVisibility('Anti-B3');">Add Anti-B</a> 
+<div id="Anti-A3" style="display: none;"><b>Agglutination does not occurs</b></div>
+<div id="Anti-B3" style="display: none;"><b>Agglutination does not occurs</b></div>
 
 <br>
 <br>
 
-<p><b>Identified blood group is:<div id="bloodgroup"> <input type="text" name="text"  id="txt"></div>
+<p><b>Identified blood group is:<div id="bloodgroup"> <input type="text" name="text4"  id="txt4"></div>
 
-<p><input type="submit" name="" value="Submit" class="b2" onclick="submit()"></div>
+<p><input type="submit" name="" value="Submit" class="b0" onclick="submit()"></div>
 
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.js"><\/script>')</script>
@@ -91,7 +73,7 @@
 
 function submit()
                   {
-                    var v = document.getElementById('txt').value;
+                    var v = document.getElementById('txt4').value;
                     
                      
                     if ((v==""))
@@ -99,13 +81,13 @@ function submit()
                     alert ("Enter blood group");
                     }
 
-                    else if ((v=="A"))
+                    else if ((v=="O"))
                     {
-                    alert ("Correct. Now identify the next sample");
+                    alert ("Correct. Well done");
                     }
-                    else if ((v=="a"))
+                    else if ((v=="o"))
                     {
-                      alert ("Correct. Now identify the next sample");
+                      alert ("Correct. Well done");
                     }
                     else
                     {
@@ -123,7 +105,6 @@ function submit()
 
 
 
-<p><a href="Sample2.html">Next Sample</a>
 
 
 
