@@ -1,4 +1,4 @@
-### Procedure
+
 1.    A blood sample with two blood drops is shown. Anti-serum have to be added to identify the blood groups. Click on "Add Anti-A" to add anti-A sera on the first blood drop. Observe whether it shows the occurrence of agglutination or nothing.
 
 2.    Similarly click on "Add Anti-B" to add anti-B sera on the second blood drop and observe.
