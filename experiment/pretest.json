@@ -1,0 +1,28 @@
+[{
+	"question": "1.BB , BO genotype belongs to which phenotypes?:",
+	"answers": {
+		"a": "O",
+		"b": "A",
+		"c": "B",
+		"d": "AB"
+	},
+	"correctAnswer": "c"
+}, {
+	"question": "2. Genotype combinations are __ in numbers.",
+	"answers": {
+		"a": "4",
+		"b": "3",
+		"c": "5",
+		"d": "6"
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "3. AA and AO genotype belongs to which phenotypes?",
+	"answers": {
+		"a": "O",
+		"b": "A",
+		"c": "B",
+		"d": "AB"
+	},
+	"correctAnswer": "b"
+}]
