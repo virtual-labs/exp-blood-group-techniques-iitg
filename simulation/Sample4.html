@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simulator</title>
+
+<style>
+.main_div{text-align:center; background: #800000; padding:20px; width: 600px;}
+.inner_div{background: #fff; margin-top:20px; height: 600px;}
+.buttons3 a{font-size: 16px font-color: blue;}
+.buttons3 a:hover{cursor:pointer; font-size: 16px; font-color: green;}
+</style>
+<script>
+    var divs = ["Anti-A3", "Anti-B3"];
+    var visibleDivId = null;
+    function toggleVisibility(divId) {
+      if(visibleDivId === divId) {
+        visibleDivId = null;
+      } else {
+        visibleDivId = divId;
+      }
+      hideNonVisibleDivs();
+    }
+    function hideNonVisibleDivs() {
+      var i, divId, div;
+      for(i = 0; i < divs.length; i++) {
+        divId = divs[i];
+        div = document.getElementById(divId);
+        if(visibleDivId === divId) {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      }
+    }
+</script>
+</head>
+<body>
+<div class="main_div">
+
+
+<div class="inner_div">
+<br>
+<p> <b>Identify the blood group by adding Anti-A and Anti-B sera on the blood sample</b></p>
+<br>
+<p><b>Sample 4:</p></b>
+<p> <img src="image/Untitled Diagram.png"  style="width:392px;height:118px;"> 
+
+<div class="buttons1">
+<a href="#" onclick="toggleVisibility('Anti-A3');">Add Anti-A</a> | <a href="#" onclick="toggleVisibility('Anti-B3');">Add Anti-B</a> 
+<div id="Anti-A3" style="display: none;"><b>Agglutination does not occurs</b></div>
+<div id="Anti-B3" style="display: none;"><b>Agglutination does not occurs</b></div>
+
+<br>
+<br>
+
+<p><b>Identified blood group is:<div id="bloodgroup"> <input type="text" name="text4"  id="txt4"></div>
+
+<p><input type="submit" name="" value="Submit" class="b0" onclick="submit()"></div>
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.js"><\/script>')</script>
+
+    <script src="js/vendor/plugins.js" type="text/javascript"></script>
+    <script src="js/puzzle.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+ 
+
+  
+
+function submit()
+                  {
+                    var v = document.getElementById('txt4').value;
+                    
+                     
+                    if ((v==""))
+                    {
+                    alert ("Enter blood group");
+                    }
+
+                    else if ((v=="O"))
+                    {
+                    alert ("Correct. Well done");
+                    }
+                    else if ((v=="o"))
+                    {
+                      alert ("Correct. Well done");
+                    }
+                    else
+                    {
+                      alert ("wrong");
+                    }
+                 }
+                  
+            
+
+       
+
+</script>
+
+
+
+
+
+
+
+
+</div>
+</div>
+</body>
+</html>
