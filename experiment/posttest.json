@@ -1,1 +1,23 @@
-[{"question":"1.The plasma is a coagulable fluid, containing a variety of substances like fibrinogen","answers":{"a":"True","b":"False"},"correctAnswer":"a"},{"question":"2.What is leukocytes?","answers":{"a":"WBC","b":"blood platelets","c":"none"},"correctAnswer":"a"},{"question":"3.Blood also help in removing the waste products of metabolic activities","answers":{"a":"True","b":"False"},"correctAnswer":"a"}]
+[{
+	"question": "1.The plasma is a coagulable fluid, containing a variety of substances like fibrinogen",
+	"answers": {
+		"a": "True",
+		"b": "False"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "2.What is leukocytes?",
+	"answers": {
+		"a": "WBC",
+		"b": "blood platelets",
+		"c": "none"
+	},
+	"correctAnswer": "a"
+}, {
+	"question": "3.Blood also help in removing the waste products of metabolic activities",
+	"answers": {
+		"a": "True",
+		"b": "False"
+	},
+	"correctAnswer": "a"
+}]
